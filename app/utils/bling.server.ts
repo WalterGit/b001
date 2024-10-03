@@ -1,6 +1,8 @@
 import base64 from "base-64";
 import { prisma } from "./db.server";
 
+// MODIFICADOS
+
 // Função para trocar o código de autorização por tokens
 export async function exchangeAuthorizationCode(code: string) {
   const clientId = process.env.BLING_CLIENT_ID!;
