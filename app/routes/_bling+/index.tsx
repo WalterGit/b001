@@ -10,6 +10,7 @@ export const loader: LoaderFunction = async ({ request }) => {
     const userId = 'Walter123';
     // const state = process.env.BLING_STATE! // Implemente esta função
     const state = generateRandomState()
+    // const authorizationUrl = `https://bling.com.br/Api/v3/oauth/authorize?response_type=code&client_id=51f45ca6bf9a485605ed6a46babc20796ffbb542&state=142536walter`;
     const authorizationUrl = `https://bling.com.br/Api/v3/oauth/authorize?response_type=code&client_id=${clientId}&state=${state}`;
 
     console.log(authorizationUrl);

@@ -91,7 +91,7 @@ interface BlingTokenResponse {
 }
 
 export const refreshAccessToken = async (refreshToken: string, userId: string) => {
-  const response = await fetch("https://api.bling.com.br/Api/v3/auth/refresh_token", {
+  const response = await fetch("https://api.bling.com.br/Api/v3/oauth/token", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
